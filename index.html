@@ -3,63 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quran Tutoring Online</title>
+  <title>QuranTutors - Learn Quran Online</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body class="bg-white text-gray-800">
 
   <!-- Navbar -->
-  <nav class="bg-white shadow-md">
+  <nav class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
       <div class="text-green-700 text-2xl font-bold">QuranTutors</div>
       <div class="hidden md:flex space-x-6">
-        <a href="#home" class="text-gray-700 hover:text-green-600">Home</a>
-        <a href="features.html" class="text-gray-700 hover:text-green-600">Features</a>
-        <a href="#contact" class="text-gray-700 hover:text-green-600">Contact</a>
+        <a href="index.html" class="text-gray-700 hover:text-green-600 transition">Home</a>
+        <a href="courses.html" class="text-gray-700 hover:text-green-600 transition">Courses</a>
+        <a href="about.html" class="text-gray-700 hover:text-green-600 transition">About</a>
+        <a href="contact.html" class="text-gray-700 hover:text-green-600 transition">Contact</a>
       </div>
-      <a href="#contact" class="md:hidden bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Try Now</a>
+      <a href="contact.html" class="md:hidden bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">Try Now</a>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section id="home" class="bg-green-100 min-h-screen flex items-center justify-center px-6 py-12">
-    <div class="max-w-3xl text-center">
-      <h1 class="text-4xl md:text-5xl font-bold text-green-800 mb-4">Learn Quran Online with Certified Tutors</h1>
-      <p class="text-lg md:text-xl text-gray-700 mb-6">One-on-one Quran classes for kids & adults — from the comfort of your home.</p>
-      <a href="#contact" class="inline-block bg-green-600 text-white text-lg font-semibold px-6 py-3 rounded-lg hover:bg-green-700 transition">Start Free Trial</a>
+  <section class="min-h-screen px-6 py-20 bg-green-50 animate-fadeIn">
+    <div class="max-w-6xl mx-auto text-center">
+      <h1 class="text-5xl font-bold text-green-800 mb-6">Master the Quran with Expert Tutors</h1>
+      <p class="text-gray-700 text-lg mb-10">Tailored online Quran courses for kids and adults with native Arabic-speaking teachers.</p>
+      <a href="courses.html" class="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition">Explore Courses</a>
+      <div class="mt-12 flex justify-center">
+        <lottie-player src="https://lottie.host/9ff24a01-5e0f-4f58-a44a-6ce6505c0376/H1A0z9gUBK.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+      </div>
     </div>
   </section>
 
   <!-- Features Section -->
-  <section id="features" class="px-6 py-12 bg-white">
-    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-      <div>
-        <h3 class="text-xl font-semibold text-green-700 mb-2">Expert Tutors</h3>
-        <p>Certified male and female teachers with years of experience in Tajweed & Tafsir.</p>
+  <section class="px-6 py-16 bg-white">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-green-700 mb-8">Why Learn with QuranTutors?</h2>
+      <div class="grid md:grid-cols-3 gap-10 text-left">
+        <div>
+          <h3 class="text-xl font-semibold text-green-600 mb-2">Certified Tutors</h3>
+          <p class="text-gray-600">Qualified male & female tutors with years of Quran teaching experience.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-green-600 mb-2">1-on-1 Classes</h3>
+          <p class="text-gray-600">Personalized sessions tailored to each student's learning pace.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-green-600 mb-2">Flexible Timings</h3>
+          <p class="text-gray-600">Schedule classes at your convenience with round-the-clock availability.</p>
+        </div>
       </div>
-      <div>
-        <h3 class="text-xl font-semibold text-green-700 mb-2">Flexible Timing</h3>
-        <p>Schedule classes as per your convenience — available 24/7 worldwide.</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold text-green-700 mb-2">Interactive Lessons</h3>
-        <p>Engaging and personalized lessons for beginners, kids, and adults alike.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="bg-green-50 px-6 py-12">
-    <div class="max-w-2xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-green-800 mb-4">Join Now & Start Your Journey</h2>
-      <p class="text-gray-700 mb-6">Fill out the form and we'll contact you to set up your free trial class.</p>
-     <form action="submit.php" method="POST" class="space-y-4">
-  <input type="text" name="name" placeholder="Your Name" required class="w-full border border-gray-300 p-3 rounded" />
-  <input type="email" name="email" placeholder="Email Address" required class="w-full border border-gray-300 p-3 rounded" />
-  <input type="text" name="phone" placeholder="Phone / WhatsApp" required class="w-full border border-gray-300 p-3 rounded" />
-  <button type="submit"class="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition">Request Free Class</button>
-</form>
-
     </div>
   </section>
 
@@ -67,6 +60,17 @@
   <footer class="text-center py-6 text-gray-600 text-sm bg-white">
     &copy; 2025 QuranTutorsOnline. All rights reserved.
   </footer>
+
+  <!-- Animations -->
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn {
+      animation: fadeIn 1s ease-out forwards;
+    }
+  </style>
 
 </body>
 </html>

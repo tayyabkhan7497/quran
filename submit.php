@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $headers = "From: noreply@yourdomain.com"; // you can use a domain email
 
     // Send email
-    if (mail($to, $subject, $message, $headers)) {
+    if (mail($to, $subject, $message, $headers)) {c
         echo "<h2>Thank you, $name! We'll contact you soon, InshaAllah.</h2>";
     } else {
         echo "<h3>Sorry, something went wrong. Please try again later.</h3>";
